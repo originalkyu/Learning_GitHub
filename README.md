@@ -93,6 +93,8 @@ git merge main
 
 ## 협업하기 3 : 두 명이 하나의 파일을 동시에 수정하여 충동이 발생했을 때
 
+## 협업하기 4 : main branch에 직접 푸시 막기
+
 
 #### reset과 revert
 
