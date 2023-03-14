@@ -89,11 +89,30 @@ git checkout service2
 git merge main
 ```
 
-## 협업하기 2 : 여러 개의 push가 이뤄졌을 때 이전 버전으로 돌아가는 법
+## 협업하기 2 : Pull Request 이용하기
+* local의 main branch는 push와 pull 용도로만 사용한다
+* service1, service2 branch가 있음을 가정함
+```
+A 작업자
+git branch service1
+git checkout service1
 
-## 협업하기 3 : 두 명이 하나의 파일을 동시에 수정하여 충동이 발생했을 때
+작업, add, commit, push 가 이뤄짐
+git push origin service1
 
-## 협업하기 4 : main branch에 직접 푸시 막기
+git checkout main
+git merge service1
+git push origin main
+
+B 작업자가 최신 버전을 자신의 branch에 반영함
+git pull origin main
+git checkout service2
+git merge main
+```
+
+## 협업하기 3 : 여러 개의 push가 이뤄졌을 때 이전 버전으로 돌아가는 법
+
+## 협업하기 4 : 두 명이 하나의 파일을 동시에 수정하여 충동이 발생했을 때
 
 
 #### reset과 revert
