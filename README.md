@@ -68,9 +68,35 @@ git clone 원격URL
 git clone 원격URL 새폴더 이름 // 현재 파일 뿐 아니라 history를 모두 가져옴
 ```
 
+## 협업하기 1 : 기본 방법
+* local의 main branch는 push와 pull 용도로만 사용한다
+* service1, service2 branch가 있음을 가정함
+```
+A 작업자
+git branch service1
+git checkout service1
+
+작업, add, commit, push 가 이뤄짐
+git push origin service1
+
+git checkout main
+git merge service1
+git push origin main
+
+B 작업자가 최신 버전을 자신의 branch에 반영함
+git pull origin main
+git checkout service2
+git merge main
+```
+
+## 협업하기 2 : 여러 개의 push가 이뤄졌을 때 이전 버전으로 돌아가는 법
+
+## 협업하기 3 : 두 명이 하나의 파일을 동시에 수정하여 충동이 발생했을 때
 
 
-#### git ignore 작성법
+#### reset과 revert
+
+## git ignore 작성법
 ```
 # a.txt 제외
 a.txt
