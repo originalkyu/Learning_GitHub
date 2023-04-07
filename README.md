@@ -5,6 +5,7 @@
 * gichulLimitLess
 * arkchive
 * JaeYeon507
+* bigcloud07
 
 ### 3.14 화
 ##### 나의 리포지토리에 다른 사람이 push 할 수 있을까?
